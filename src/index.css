@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+h1 {
+  @apply text-4xl md:text-6xl font-bold;
+}
+
+h2 {
+  @apply text-2xl md:text-4xl font-bold;
+}
+
+h3 {
+  @apply text-lg md:text-2xl font-bold;
+}
+
+.container {
+  @apply w-full md:max-w-[800px] lg:max-w-[1000px] mx-auto px-4 md:px-0;
+}
+
+.skeleton {
+  @apply animate-pulse bg-slate-200 rounded-lg;
+}
+
+.btn {
+  @apply flex justify-center items-center gap-2 rounded-lg shadow px-4 py-2;
+}
+
+.btn-lg {
+  @apply text-lg px-6 py-4;
+}
