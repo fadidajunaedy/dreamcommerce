@@ -6,7 +6,7 @@ const NavBack = () => {
             <span className="flex items-center">
                 <HiArrowLongLeft size={18}/>
                 &nbsp;
-                Kembali
+                Back
             </span>
         </button>
     )
