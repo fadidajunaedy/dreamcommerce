@@ -6,6 +6,7 @@
 
 body {
   font-family: "Plus Jakarta Sans", serif;
+  @apply bg-base text-primary-dark;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h3 {
 }
 
 .container {
-  @apply w-full md:max-w-[800px] lg:max-w-[1000px] mx-auto px-4 md:px-0;
+  @apply w-full md:max-w-[1000px] lg:max-w-[1200px] mx-auto px-4 lg:px-0;
 }
 
 .skeleton {
@@ -34,4 +35,8 @@ h3 {
 
 .btn-lg {
   @apply text-lg px-6 py-4;
+}
+
+.btn-xl {
+  @apply text-xl px-8 py-6;
 }
