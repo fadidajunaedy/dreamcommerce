@@ -3,6 +3,7 @@ import { addToCart, decreaseQuantityCart, deleteCart } from "../store/cartSlice"
 import { IoIosCloseCircleOutline } from "react-icons/io"
 import { FaMinus, FaPlus } from "react-icons/fa6"
 import Badge from "../components/Bagde"
+import NavBack from "../components/NavBack"
 
 const Cart = () => {
     const cart = useSelector((state) => state.cart.products)
@@ -13,6 +14,7 @@ const Cart = () => {
     return (
         <>
             <section className="container min-h-[90vh] py-4">
+                <NavBack />
                 <h2 className="mb-8">Cart</h2>
                 <div className="w-full grid grid-cols-1 md:grid-cols-5 gap-4">
                     <div className="md:col-span-3 flex flex-col gap-4">

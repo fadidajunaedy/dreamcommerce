@@ -6,6 +6,7 @@ import { HiOutlineInboxArrowDown, HiOutlineInbox } from "react-icons/hi2"
 import { FaHeart, FaMinus, FaPlus, FaRegHeart } from "react-icons/fa6"
 import PlaceholderImage from "../assets/images/placeholder.png"
 import { toggleWishlist } from "../store/wishlistSlice"
+import NavBack from "../components/NavBack"
 
 const Product = () => {
     const [product, setProduct] = useState(null)
@@ -47,7 +48,8 @@ const Product = () => {
 
     return (
         <>
-            <section className="container min-h-[90vh] flex items-center py-4">
+            <section className="container min-h-[90vh] flex flex-col items-center py-4">
+                <NavBack />
                 <div className="w-full bg-base grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {loading ? (
                         <>
