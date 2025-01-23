@@ -4,9 +4,10 @@ import { useParams } from "react-router-dom"
 import { addToCart, decreaseQuantityCart, deleteCart } from "../store/cartSlice"
 import { HiOutlineInboxArrowDown, HiOutlineInbox } from "react-icons/hi2"
 import { FaHeart, FaMinus, FaPlus, FaRegHeart } from "react-icons/fa6"
-import PlaceholderImage from "../assets/images/placeholder.png"
 import { toggleWishlist } from "../store/wishlistSlice"
+
 import NavBack from "../components/NavBack"
+import useValidImage from "../hooks/useValidImage"
 
 const Product = () => {
     const [product, setProduct] = useState(null)
@@ -46,6 +47,8 @@ const Product = () => {
         return () => controller.abort()
     }, [id])
 
+    const validPreview = useValidImage(preview)
+
     return (
         <>
             <section className="container min-h-[90vh] flex flex-col items-center py-4">
@@ -80,7 +83,7 @@ const Product = () => {
                                 <figure className="aspect-square bg-base rounded-lg shadow overflow-hidden">
                                     {preview ? (
                                         <img 
-                                            src={preview} 
+                                            src={validPreview} 
                                             alt={product?.title}
                                             loading="lazy"
                                             className="w-full h-full object-center object-cover"
