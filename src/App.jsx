@@ -11,9 +11,9 @@ import Footer from "./components/Footer"
 const App = () => {
   return (
     <>
-      <Router>
+      <Router basename="/">
         <Navbar />
-        <main className="py-4">
+        <main className="py-2">
         <Routes>
           <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<Product />} />
