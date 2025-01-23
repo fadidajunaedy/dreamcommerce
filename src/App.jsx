@@ -15,7 +15,7 @@ const App = () => {
       <Router basename="/">
         <ScrollToTop />
         <Navbar />
-        <main className="py-2">
+        <main>
         <Routes>
           <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<Product />} />
