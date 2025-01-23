@@ -7,11 +7,13 @@ import Product from "./pages/Product"
 import Wishlist from "./pages/Wishlist"
 import Cart from "./pages/Cart"
 import Footer from "./components/Footer"
+import ScrollToTop from "./components/ScrollToTop"
 
 const App = () => {
   return (
     <>
       <Router basename="/">
+        <ScrollToTop />
         <Navbar />
         <main className="py-2">
         <Routes>
