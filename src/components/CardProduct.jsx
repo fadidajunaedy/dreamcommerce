@@ -17,7 +17,7 @@ const CardProduct = ({ product }) => {
                 type="button"
                 onClick={() => dispatch(toggleWishlist(product))}
                 className="absolute right-2 top-2 bg-secondary text-primary-red flex justify-center items-center rounded-full p-2"
-                aria-pressed={wishlist} // Menyediakan status toggle untuk aksesibilitas
+                aria-pressed={wishlist}
                 aria-label={wishlist ? "Remove from wishlist" : "Add to wishlist"}
             >
                 {wishlist ? <FaHeart /> : <FaRegHeart />}
@@ -25,7 +25,7 @@ const CardProduct = ({ product }) => {
             <figure className="aspect-square">
                 <img 
                     src={useValidImage(product.images[0])} 
-                    alt={`Image of ${product.title}`} // Deskripsi gambar yang lebih informatif
+                    alt={`Image of ${product.title}`}
                     loading="lazy"
                     className="w-full h-full object-center object-cover"
                 />
