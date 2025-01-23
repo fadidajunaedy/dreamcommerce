@@ -1,4 +1,4 @@
-# DreamCommerce (On Progress...)
+# DreamCommerce
 
 A simple e-commerce application built to showcase basic features of an online store. This project is part of my journey to learn and implement **React.js** and **Redux** for state management.
 
